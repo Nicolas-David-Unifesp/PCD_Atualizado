@@ -17,7 +17,7 @@ export class Pcd implements Subject {
   removeObserver(o: Observer): void {
     this.observers = this.observers.filter(obs => obs !== o);
   }
-
+//Aqui ocorre a inversão de controle, pois o observer só consegue mostrar a atualização quando é chamado pelo PCD. Neste caso, o PCD que define o que vai ser chamado e quando vai ser chamado.
   notifyObservers(): void {
     this.observers.forEach(obs => {
       obs.update_humidity("Umidade: 60%");
