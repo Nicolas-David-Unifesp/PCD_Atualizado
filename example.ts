@@ -10,7 +10,7 @@ const pcd_rio_Branco = new Pcd("PCD Riobranco");
 const university = new University("Unicamp");
 const university2 = new University("USP");
 
-//PCD registra o observer de rio negro.
+
 pcd_rio_Branco.registerObserver(university);
 pcd_rio_Branco.registerObserver(university2);
 
