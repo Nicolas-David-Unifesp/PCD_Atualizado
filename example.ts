@@ -1,5 +1,3 @@
-import { Observer } from "./Observer";
-import { Subject } from "./Subject";
 import { Pcd } from "./PCD";
 import { University } from "./University";
 
